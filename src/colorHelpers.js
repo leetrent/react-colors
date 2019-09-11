@@ -9,12 +9,12 @@ function generatePalette(starterPalette) {
         emoji: starterPalette.emoji,
         colors: {}
     };
-    for ( let level of levels) {
+    for ( var level of levels) {
         newPalette.colors[level] = [];
     }
-    for ( let color of starterPalette.colors ) {
+    for ( var color of starterPalette.colors ) {
         let scale = getScale(color.color, 10).reverse();
-        for ( let ii in scale ) {
+        for ( var ii in scale ) {
             newPalette.colors[levels[ii]].push({
                 name: `${color.name} ${levels[ii]}`,
                 id: color.name.toLowerCase().replace(/ /g, "-"),
