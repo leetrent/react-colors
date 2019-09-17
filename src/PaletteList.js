@@ -5,18 +5,18 @@ import MiniPalette from './MiniPalette';
 const styles = {
     root: {
         backgroundColor: "blue",
-        height: "100%",
+        height: "100vh",
         display: "flex",
         alignItems: "flex-start",
-        justifyContent: "center"
-
+        justifyContent: "center",
+        border: "2px solid orange"
     },
     container: {
         width: "50%",
         display: "flex",
         alignItems: "flex-start",
         flexDirection: "column",
-        flexWrap: "wrap",
+        flexWrap: "wrap"
     },
     nav: {
         display: "flex",
@@ -44,7 +44,7 @@ class PaletteList extends Component {
                     </nav>
                     <div className={classes.palettes}>
                         { palettes.map(palette => (
-                            <MiniPalette { ...palette } />
+                            <MiniPalette key={palette.paletteName} { ...palette } />
                         ))}   
                     </div>
                 </div>
