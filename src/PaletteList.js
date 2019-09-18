@@ -8,8 +8,7 @@ const styles = {
         height: "100vh",
         display: "flex",
         alignItems: "flex-start",
-        justifyContent: "center",
-        border: "2px solid orange"
+        justifyContent: "center"
     },
     container: {
         width: "50%",
