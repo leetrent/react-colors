@@ -28,7 +28,7 @@ const styles = {
         width: "100%",
         display: "grid",
         gridTemplateColumns: "repeat(3, 30%)",
-        gridGap: "5%",
+        gridGap: "9px"
     }
 };
 
